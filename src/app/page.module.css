@@ -50,7 +50,7 @@
 
 .main code {
   font-family: inherit;
-  background: var(--gray-alpha-100);
+  background: white;
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
@@ -164,4 +164,20 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+
+nav.navbarC {
+    background-color: #1E3A52;
+}
+
+.custom-btn-primary {
+    background-color: #1E3A52 !important; /* Tambahkan !important */
+    border-color: #007bff !important;
+    color: white !important;
+}
+
+
+.navbar-text {
+    color: #6C757D;
 }

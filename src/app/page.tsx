@@ -40,19 +40,38 @@ export default function Home() {
                     <h2 className="mb-4 text-white">Promo Terbaru</h2>
 
                     <div className="row">
-                        <div className="col-md-6 col-lg-3 mb-4">
+                        <div className="col-md-6 col-lg-4 mb-4">
                             <PromoCard
                                 image="/images/promo1.png"
                                 title="Voucher untuk nasabah baru"
                                 periode="17 Okt 2025 - 30 Nov 2025"
                             />
+                            <span className="text-white"></span>
+                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
                         </div>
 
-                    {/* Periode */}
-                    <div className="d-flex align-items-center text-muted">
-                        <span className="text-white"></span>
+                        <div className="col-md-6 col-lg-4 mb-4">
+                            <PromoCard
+                                image="/images/promo2.jpg"
+                                title="Voucher untuk nasabah baru"
+                                periode="17 Okt 2025 - 30 Nov 2025"
+                            />
+                            <span className="text-white"></span>
                             <small className="text-white">* Syarat dan ketentuan berlaku</small>
-                    </div>
+
+                        </div>
+                        <div className="col-md-6 col-lg-4 mb-4">
+                            <PromoCard
+                                image="/images/promo3.jpg"
+                                title="Voucher untuk nasabah baru"
+                                periode="17 Okt 2025 - 30 Nov 2025"
+                            />
+                            <span className="text-white"></span>
+                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
+
+                        </div>
+
+
                     </div>
                 </div>
             </section>

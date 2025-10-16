@@ -167,24 +167,30 @@ a.secondary {
 }
 
 
-nav.navbarC {
-    background-color: #1E3A52;
+.custom-text {
+    color: #D2C1B6 !important;
 }
-
 .custom-btn-primary {
     background-color: #1E3A52 !important; /* Tambahkan !important */
     border-color: #007bff !important;
     color: white !important;
 }
-
 .navbar-text {
     color: #6C757D;
 }
 
 .background-primary {
-    background-color: #234C6A !important;
+    background-color: #1B3C53 !important;
 }
 
 .background-secondary {
+    background-color: #234C6A !important;
+}
+
+.background-third {
     background-color: #456882 !important;
+}
+
+body {
+    background-color: #1B3C53 !important;
 }

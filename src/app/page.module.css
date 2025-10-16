@@ -194,3 +194,9 @@ a.secondary {
 body {
     background-color: #1B3C53 !important;
 }
+.footerCustom {
+    background-color: #1B3C53;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

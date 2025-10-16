@@ -1,30 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./page.module.css";
 import Link from "next/link";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import PromoCard from "../../components/promoCard";
 
 export default function Home() {
     return (
         <>
-            <header>
-                <nav className={`navbar-expand-lg navbar ${styles.navbarC}`} >
-                    <div className="container-fluid">
-                        <ul className="navbar-nav color-white">
-                            <li className="nav-item">
-                                <Link className={`nav-link text-white ${styles.navbarText}`} href="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className={`nav-link text-white ${styles.navbarText}`} href="/services">Services</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className={`nav-link text-white ${styles.navbarText}`} href="/about">About</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className={`nav-link text-white ${styles.navbarText}`} href="/contact">Contact</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+            <Header />
             <section className="bg-light py-5">
                 <div className="container">
                     <div className="row align-items-center">
@@ -51,7 +35,28 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className={`py-5 ${styles['background-primary']}`}>
+                <div className="container">
+                    <h2 className="mb-4 text-white">Promo Terbaru</h2>
 
+                    <div className="row">
+                        <div className="col-md-6 col-lg-3 mb-4">
+                            <PromoCard
+                                image="/images/promo1.png"
+                                title="Voucher untuk nasabah baru"
+                                periode="17 Okt 2025 - 30 Nov 2025"
+                            />
+                        </div>
+
+                    {/* Periode */}
+                    <div className="d-flex align-items-center text-muted">
+                        <span className="text-white"></span>
+                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <Footer />
         </>
     );
 }

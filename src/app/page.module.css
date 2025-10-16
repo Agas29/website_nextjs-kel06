@@ -177,7 +177,14 @@ nav.navbarC {
     color: white !important;
 }
 
-
 .navbar-text {
     color: #6C757D;
+}
+
+.background-primary {
+    background-color: #234C6A !important;
+}
+
+.background-secondary {
+    background-color: #456882 !important;
 }

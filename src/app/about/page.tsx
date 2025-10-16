@@ -78,7 +78,7 @@ export default function Home() {
                                     style={{ height: "250px", objectFit: "cover", width: "100%" }}
                                 />
                                 <h5 className="fw-bold" style={{ color: "#234C6A" }}>
-                                    Gorow's Team.
+                                    Goro's Team.
                                 </h5>
                                 <p className="text-muted">Chief Executive Officer</p>
                             </div>

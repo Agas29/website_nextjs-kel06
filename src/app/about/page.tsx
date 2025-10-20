@@ -136,7 +136,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <footer className={`py-5 ${styles.footerCustom}`}> 
+            <footer className={`py-5 ${styles['custom-text']}`}> 
                 <div className="container">
                     <div className="row">
                         {/* Alamat */}

@@ -6,6 +6,24 @@ import Footer from "../../components/footer";
 import PromoCard from "../../components/promoCard";
 
 export default function Home() {
+    const promos = [
+        {
+            id: 1,
+            image: '/images/promo1.png',
+            title: 'Voucher untuk nasabah baru',
+            periode: '17 Okt 2025 - 30 Nov 2025'
+        }, {
+            id: 2,
+            image: '/images/promo2.jpg',
+            title: "Cashback 50% untuk transaksi pertama",
+            periode: "17 Okt 2025 - 30 Nov 2025"
+        }, {
+            id: 3,
+            image: '/images/promo3.jpg',
+            title: "Gratis biaya admin bulanan",
+            periode: "17 Okt 2025 - 30 Nov 2025"
+        }
+    ]
     return (
         <>
             <Header />
@@ -40,38 +58,16 @@ export default function Home() {
                     <h2 className="mb-4 text-white">Promo Terbaru</h2>
 
                     <div className="row">
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <PromoCard
-                                image="/images/promo1.png"
-                                title="Voucher untuk nasabah baru"
-                                periode="17 Okt 2025 - 30 Nov 2025"
-                            />
-                            <span className="text-white"></span>
-                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
-                        </div>
-
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <PromoCard
-                                image="/images/promo2.jpg"
-                                title="Voucher untuk nasabah baru"
-                                periode="17 Okt 2025 - 30 Nov 2025"
-                            />
-                            <span className="text-white"></span>
-                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
-
-                        </div>
-                        <div className="col-md-6 col-lg-4 mb-4">
-                            <PromoCard
-                                image="/images/promo3.jpg"
-                                title="Voucher untuk nasabah baru"
-                                periode="17 Okt 2025 - 30 Nov 2025"
-                            />
-                            <span className="text-white"></span>
-                            <small className="text-white">* Syarat dan ketentuan berlaku</small>
-
-                        </div>
-
-
+                        {promos.map((promo) => (
+                            <div key={promo.id} className="col-md-4 col-lg-4 mb-4">
+                                <PromoCard
+                                    image={promo.image}
+                                    title={promo.title}
+                                    periode={promo.periode}
+                                />
+                                <small className="text-white">*S&K berlaku</small>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
